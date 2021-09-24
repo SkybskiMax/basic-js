@@ -20,11 +20,15 @@ import { NotImplementedError } from '../extensions/index.js';
  * 
  */
 export default class VigenereCipheringMachine {
-  encrypt() {
+  constructor (bool) {
+    this.isDirect = bool;
+  }
+
+  encrypt(message, key) {
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   }
-  decrypt() {
+  decrypt(encryptedMessage, key) {
     throw new NotImplementedError('Not implemented');
     // remove line with error and write your code here
   }
